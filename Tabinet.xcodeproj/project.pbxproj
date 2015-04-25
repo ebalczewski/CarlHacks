@@ -401,6 +401,7 @@
 				F6E218F51AE9ECEC0012172C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F6E218F61AE9ECEC0012172C /* Build configuration list for PBXNativeTarget "TabinetTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +410,7 @@
 				F6E218F81AE9ECEC0012172C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
