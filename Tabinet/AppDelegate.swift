@@ -21,12 +21,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
+    func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
+        return true;
+    }
+    
     // MARK: - Core Data stack
-
+    
+    
     lazy var applicationDocumentsDirectory: NSURL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "ebal.Tabinet" in the user's Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.ApplicationSupportDirectory, inDomains: .UserDomainMask)
-        let appSupportURL = urls[urls.count - 1] as NSURL
+        let appSupportURL = urls[urls.count - 1] as! NSURL
         return appSupportURL.URLByAppendingPathComponent("ebal.Tabinet")
     }()
 
